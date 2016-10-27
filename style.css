@@ -1,5 +1,5 @@
 body {
-    background-color: #ededce;
+    background-color: #c7e5f2;
     font-size: 87.5; /* Base font size is 14px */
     font-family: Arial, 'Lucida Sans Unicode';
     line-height: 1.5;
@@ -11,11 +11,11 @@ a {
 }
 
 a:link, a:visited {
-    color: #abeadb;
+    color: #779670;
 }
 
 a:hover, a:active {
-    background-color: #abeadb;
+    background-color: #e5a085;
     color: #FFF;
 }
 
@@ -26,7 +26,7 @@ a:hover, a:active {
 }
 
 .mainHeader img {
-    width: 15%;
+    width: 30%;
     height: auto;
     display: block;
     margin: auto;
@@ -35,7 +35,7 @@ a:hover, a:active {
 }
 
 .mainHeader nav {
-    background-color: #666;
+    background-color: #e5a085;
     height: 75px;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -62,7 +62,7 @@ a:hover, a:active {
 
 .mainHeader nav a:hover, .mainHeader nav a:active
 .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-    background-color: #abeadb;
+    background-color: #779670;
     text-shadow: none;
 }
 
@@ -102,6 +102,12 @@ a:hover, a:active {
     margin-top: 2%
 }
 
+.post-info {
+    font-style: italic;
+    color: #999;
+    font-size: 85%;
+  }
+
 .top-sidebar {
     width: 21%;
     float: left;
@@ -111,12 +117,6 @@ a:hover, a:active {
     -webkit-border-radius: 5px;
     margin: 1% 0 2% 3%;
     padding: 2% 3%;
-}
-
-.post-info {
-    font-style: italic;
-    color: #999;
-    font-size: 85%;
 }
 
 .middle-sidebar {
@@ -146,11 +146,10 @@ a:hover, a:active {
 .mainFooter {
     width: 100%;
     float: left;
-    background-color: #FFF;
+    background-color: #e5a085;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    background-color: #666;
     margin: 2% 0;
 }
 
@@ -160,7 +159,7 @@ a:hover, a:active {
     color: #FFF;
 }
 
-@@media only screen and (min-width: 150px) and (max-width: 600px)
+@media only screen and (min-width: 150px) and (max-width: 600px)
 {
     .body {
         width: 90%;
@@ -190,4 +189,44 @@ a:hover, a:active {
         display: block;
     }
 
+    .content {
+        width: 100%;
+        float: left;
+        margin-top: 2%;
+    }
+
+    .post-info {
+        display: none;
+    }
+
+    .topContent {
+        background-color: #FFF;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        padding: 3% 5%;
+        margin-top: 3%;
+    }
+
+    .bottomContent{
+        margin-top: 3%;
+    }
+
+    .top-sidebar {
+        width: 94%;
+        margin: 2% 0 2% 0%;
+        padding: 2% 3%;
+    }
+
+    .middle-sidebar {
+        width: 94%;
+        margin: 2% 0 2% 0%;
+        padding: 2% 3%;
+    }
+
+    .bottom-sidebar {
+        width: 94%;
+        margin: 2% 0 2% 0%;
+        padding: 2% 3%;
+    }
 }
